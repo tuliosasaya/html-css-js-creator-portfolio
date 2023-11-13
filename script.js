@@ -4,3 +4,11 @@ function toggleMenu() {
     menu.classList.toggle("open");
     icon.classList.toggle("open");
 }
+
+const dropdown = document.querySelector('.dropdown');
+const dropcontent = document.querySelector('.dropcontent');
+
+dropdown.addEventListener('click', () => {
+    dropdown.classList.toggle('active');
+})
+
