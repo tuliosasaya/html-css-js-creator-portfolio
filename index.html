@@ -6,6 +6,7 @@
     <title>Creator Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
+    <script src="https://kit.fontawesome.com/433ebc44f2.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <nav id="desktop-nav">
@@ -13,7 +14,6 @@
         <div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -28,7 +28,6 @@
         </div>
         <div class="menu-links">
             <li><a href="#about" onclick="toggleMenu()">About</a></li>
-            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
             <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
     </div>
@@ -39,127 +38,39 @@
             <img src="./assets/profile-pic.png" alt="Tulio Sasaya profile picture">
         </div>
         <div class="section__text">
-            <p class="section__text__p1">Hello, I'm</p>
-            <h1 class="title">Tulio Sasaya</h1>
-            <p class="section__text__p2">Content Creator</p>
+            <p class="section__text__p1">@tulio_sasaya</p>
             <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">Download CV</button>
-                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+                <button class="btn btn-color-2" onclick="location.href='https://www.instagram.com/tulio_sasaya/'">
+                    <i class="fab fa-instagram"></i>
+                        <h3>270K</h3>
+                </button>
+                <button class="btn btn-color-2" onclick="location.href='https://www.tiktok.com/@tulio_sasaya'">
+                    <i class="fab fa-tiktok"></i>
+                        <h3>600K</h3>
+                </button>
+                <button class="btn btn-color-2" onclick="location.href='https://www.youtube.com/c/TulioSasaya'">
+                    <i class="fab fa-youtube"></i>
+                        <h3>5K</h3>
+                </button>
             </div>
-            <div id="socials-container">
-                <img src="./assets/linkedin.png" alt="My Linkedin profile"
-                class="icon" onclick="location.href='https://linkedin.com/'">
-                <img src="./assets/github.png" alt="My Github profile"
-                class="icon" onclick="location.href='https://github.com/'">
+            <div class="misc-container">
+                <button class="misc misc-button1" onclick="location.href='mailto:tksasaya.business@gmail.com'">
+                    <i class="left-icon fas fa-solid fa-envelope"></i>
+                    <div class="text-center">
+                        <h3>Email Contact</h3>
+                    </div>
+                </button>
+                
             </div>
         </div>
     </section>
     <section id="about">
         <p class="section__text__p1">Get To Know More</p>
         <h1 class="title">About Me</h1>
-        <div class="section-container">
-            <div class="section__pic-container">
-                <img src="./assets/about-pic.png" alt="Profile picture" class="about-pic"/>
-            </div>
-            <div class="about-details-container">
-                <div class="about-containers">
-                    <div class="details-container">
-                        <img src="./assets/experience.png" alt="Experience icon" class="icon"/>
-                        <h3>Experience</h3>
-                        <p>2+ years <br>Content Creator</p>
-                    </div>
-                    <div class="details-container">
-                        <img src="./assets/education.png" alt="Education icon" class="icon"/>
-                        <h3>Education</h3>
-                        <p>B.Sc. Bachelors Degree<br>M.Sc. Masters Degree</p>
-                    </div>
-                </div>
-                <div class="text-container">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime odit, necessitatibus optio sunt, rerum illum adipisci, soluta reiciendis illo quisquam ea velit vel magnam eveniet impedit vero aspernatur! Saepe, quam.</p>
-                </div>
-            </div>
-        </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow"
-        onclick="location.href='./#experience'" />
-    </section>
-    <section id="experience">
-        <p class="section__text__p1">Explore My</p>
-        <h1 class="title">Experience</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Content Creator</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon"/>
-                            <div>
-                                <h3>HTML</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon"/>
-                            <div>
-                                <h3>CSS</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon"/>
-                            <div>
-                                <h3>JavaScript</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon"/>
-                            <div>
-                                <h3>TypeScript</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon"/>
-                            <div>
-                                <h3>Material UI</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Content Creator</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon"/>
-                            <div>
-                                <h3>PostgreSQL</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon"/>
-                            <div>
-                                <h3>JS</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon"/>
-                            <div>
-                                <h3>Express_JS</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon"/>
-                            <div>
-                                <h3>Git</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
+        <div class="video-container">
+            <iframe class="video" src="https://www.youtube.com/embed/jP__Xzg3wKg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="section__text__half">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius ratione non tempore, illo sapiente id! Voluptatibus quos fuga, saepe qui amet, eius, libero perspiciatis dolorum optio ex nesciunt aut ducimus!</p>
             </div>
         </div>
         <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow"
@@ -173,19 +84,26 @@
                 <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon"/>
                 <p><a href="mailto:tksasaya.business@gmail.com">tksasaya.business@gmail.com</a></p>
             </div>
-            <div class="contact-info-container">
-                <img src="./assets/linkedin.png" alt="Linkedin icon" class="icon contact-icon"/>
-                <p><a href="https://www.linkedin.com">LinkedIn</a></p>
-            </div>
         </div>
-
+        <div id="socials-container">
+            <img src="./assets/instagram.svg" alt="My Instagram profile"
+            class="icon" onclick="location.href='https://www.instagram.com/tulio_sasaya/'">
+            <img src="./assets/tiktok.svg" alt="My TikTok profile"
+            class="icon" onclick="location.href='https://www.tiktok.com/@tulio_sasaya'">
+            <img src="./assets/youtube.svg" alt="My YouTube profile"
+            class="icon" onclick="location.href='https://www.youtube.com/c/TulioSasaya'">
+            <img src="./assets/linkedin.svg" alt="My Linkedin profile"
+            class="icon" onclick="location.href='https://linkedin.com/in/tuliosasaya'">
+            <img src="./assets/envelope-solid.svg" alt="My Mail"
+            class="icon" onclick="location.href='mailto:tksasaya.business@gmail.com'">
+        </div>
     </section>
     <footer>
         <nav>
             <div class="nav-links-container">
                 <ul class="nav-links">
+                    <li><a href="#desktop-nav">Profile</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
