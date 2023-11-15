@@ -17,11 +17,12 @@ html {
 }
 
 p {
-    color: rgb(85, 85 85);
+    color: rgb(29, 29, 29);
 }
 
-h3 {
-    color: black;
+.h3-text {
+    font-size: medium;
+    font-weight: 600;
 }
 
 /* TRANSITION */

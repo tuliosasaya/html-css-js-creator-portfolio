@@ -125,5 +125,8 @@
     .btn {
         width: 30%;
     }
-
+    .left-icon,
+    .drop-icon {
+        margin-right: 290px;
+    }
 }
