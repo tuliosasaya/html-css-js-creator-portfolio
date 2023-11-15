@@ -20,9 +20,11 @@
         margin-top: 2rem;
     }
     #profile, .section-container {
+        height: fit-content;
         display: block;
     }
-    .arrow {
+    .arrow1,
+    .arrow2 {
         display: none;
     }
     section, .section-container {
@@ -40,6 +42,24 @@
     .about-containers {
         margin-top: 0;
     }
+    .section__text__p1 {
+        margin-top: 0;
+    }
+    .video-container {
+        gap: 0;
+    }
+    .yt-container {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .section__text__half {
+        margin-left: 0rem;
+        max-width: 95%;
+        text-align: center;
+    }
+    .insta-container {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -47,7 +67,7 @@
         height: 40vh;
     }
     #profile {
-        height: 83vh;
+        height: fit-content;
         margin-bottom: 0;
     }
     article {
@@ -62,7 +82,7 @@
     .btn-container,
     .misc,
     .dropdown,
-    .dropdown a {
+    .dropcontent a {
         flex-wrap: wrap;
     }
     .contact-info-container {
@@ -92,22 +112,14 @@
     .text-container {
         text-align: justify;
     }
-    .video-container {
+    .misc,
+    .dropdown{
+        width: 100%;
+    }
+    .dropdown-container {
         display: block;
     }
-    .video {
-        width: 100%;
-    }
-    .section__text__half {
-        margin-left: 0rem;
-        max-width: 100%;
-        text-align: center;
-    }
-    .misc,
-    .dropdown {
-        width: 100%;
-    }
-    .dropdown a {
+    .dropcontent a{
         width: 99%;
     }
     .btn {
